@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useState, useRef } from "react";
 import Header from "../../componnents/Header/Header";
 import SideBar from "../../componnents/Sidebar/Sidebar";
@@ -15,7 +16,6 @@ const Home = () => {
   const city_name = `tashkent`;
   const [location, setLocation] = useState({ lan: null, lat: null });
   const [error, setError] = useState(null);
- 
 
   useEffect(() => {
     API.get(`/weather?q=tashkent&appid=${API_KEY}&units=metric`).then((res) =>
