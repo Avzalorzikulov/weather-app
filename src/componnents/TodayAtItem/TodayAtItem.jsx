@@ -26,11 +26,13 @@ function TodayAtItem({ currentTime, currentTemp, currentIcon }) {
   let currentHourReal =
     currentHour > 12 ? currentHour - 12 + "PM" : currentHour + "PM";
   return (
-    <li>
-      <span className="spancha">
-        {currnetDate} {currnetMonth}
-      </span>
-      <h3> {currentHourReal} </h3>
+    <li className="licha" >
+      <div>
+        <span className="spancha">
+          {currnetDate} {currnetMonth}
+        </span>
+        <h3> {currentHourReal} </h3>
+      </div>
       <img
         src={`https://openweathermap.org/img/wn/${currentIcon}@2x.png`}
         alt="Hourly Weather"

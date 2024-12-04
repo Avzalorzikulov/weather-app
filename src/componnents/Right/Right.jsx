@@ -10,7 +10,7 @@ import { MdOutlineRemoveRedEye, MdOutlineWaterDrop } from "react-icons/md";
 import { IoNavigateOutline } from "react-icons/io5";
 
 import "./Right.css";
-import AirItem from "../airItem/airItem";
+import AirItem from "../AirItem/AirItem"; // Ensure case matches exactly
 import TodayAtItem from "../TodayAtItem/TodayAtItem";
 const Right = ({ air, currentWeather, forecast }) => {
   console.log(forecast);

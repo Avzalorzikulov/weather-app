@@ -468,6 +468,10 @@
     .sidebar__box {
         gap: 10px;
     }
+    .sidebar__hourly ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    }
   
     .sidebar__current,
     .sidebar__forecast {
@@ -503,6 +507,7 @@
     .sidebar__forecast {
         padding: 10px;
     }
+   
   
     .sidebar__current-temp img {
         width: 40px;
@@ -512,5 +517,8 @@
     .sidebar__forecast-item img {
         width: 30px;
         height: 30px; 
+    }
+    .licha{
+      display: flex;
     }
 }
